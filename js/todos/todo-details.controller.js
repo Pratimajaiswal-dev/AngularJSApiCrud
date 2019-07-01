@@ -49,8 +49,8 @@ app.controller('TodoDetailsController',
             TodoService.update($scope.todo)
                 .then(
                     function (response) {
-                        $scope.message = 'Error';
-                        $scope.messageClass = 'alert alert-error';
+                        $scope.message = 'Successfully Updated';
+                        $scope.messageClass = 'alert alert-success';
                         $location.path('');
                     },
                     function (response) {

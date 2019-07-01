@@ -12,9 +12,6 @@ app
         $scope.message = null;
         $scope.messageClass = 'alert alert-success';
 
-        self.successMessage = '';
-        self.errorMessage = '';
-
         function buildError(messages) {
             $scope.message = (messages || []).map(msg => msg + '<br/>');
             $scope.messageClass = 'alert alert-danger';
